@@ -1,47 +1,47 @@
-# Gender-Classification-Computer-Vision-
-Gender Classification from Handwriting
 
-the author:
+# Gender Classification from Handwriting
 
-	safaa azbarqa  -- email: "safaa8721@gmail.com"
+## Overview
+This project classifies gender based on handwriting using computer vision techniques. Given a dataset of handwriting samples, the code determines whether the handwriting belongs to a male or female.
 
-With a given file, the code cross over all the pictures and determine which of them are in a female handwriting 
-and which are in the handwriting of a male.
+## Author
+**Safaa Azbarqa**  
+Email: [safaa8721@gmail.com](mailto:safaa8721@gmail.com)
 
-To run the code:
-use any development environment with python installation and install these libraries:
-- opencv
-- numpy
-- skimage
-- sklearn
+## How to Run
+1. **Prerequisites:**  
+   Ensure you have Python installed along with the following libraries:
+   - OpenCV
+   - NumPy
+   - scikit-image
+   - scikit-learn
 
-then write this row in the terminal:
-                  > python classifier.py path_train path_val path_test
-                  
-classifier.py --- python file that contains the code
+2. **Running the Classifier:**  
+   Execute the following command in the terminal:
+   ```
+   python classifier.py <path_train> <path_val> <path_test>
+   ```
+   - `classifier.py`: Contains the main code.
+   - `<path_train>`, `<path_val>`, `<path_test>`: Directories containing training, validation, and test images respectively.
 
-path_train,path_val,path_test------ Are the folder names of pictures are in train, valid and test.
-
-As an output you will receive the file "results.txt" that contains: 
-
-what model do we use, confusion matrix,
-the parameters that we in LBP.
-
-*Example for the results file:
-
-svm with kernal: linear
-
-number points: 8
-
-radius: 1
-
-Accuracy: 66.67%
-
- 	 male 	 female 
+3. **Output:**  
+   The results will be saved in a file named `results.txt`, which includes:
+   - The model used
+   - Confusion matrix
+   - Local Binary Pattern (LBP) parameters
    
- male 	 26     	 14 
- 
- female 	 9    	 21
- 
- ---------------
- 8.2.2022
+   *Example of `results.txt`:*
+   ```
+   SVM with kernel: linear
+   Number of points: 8
+   Radius: 1
+   Accuracy: 66.67%
+
+   Confusion Matrix:
+           Male   Female
+   Male     26       14
+   Female    9       21
+   ```
+
+## Date
+8th February 2022
